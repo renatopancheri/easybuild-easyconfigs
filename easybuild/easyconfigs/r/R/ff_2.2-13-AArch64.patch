@@ -1,0 +1,12 @@
+diff -ru ff/src/utk_platform_macros.hpp ff2/src/utk_platform_macros.hpp
+--- ff/src/utk_platform_macros.hpp	2013-02-24 16:50:09.000000000 +0100
++++ ff2/src/utk_platform_macros.hpp	2017-12-06 10:25:58.557022295 +0100
+@@ -136,6 +136,8 @@
+     #define UTK__Arch_ARM_THUMB
+   #elif defined(__sh__)
+     #define UTK__Arch_SuperH
++  #elif defined(__aarch64__)
++    #define UTK__Arch_AARCH64
+   #else
+     #error Architecture not supported.
+   #endif

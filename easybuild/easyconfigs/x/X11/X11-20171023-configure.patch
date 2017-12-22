@@ -1,0 +1,13 @@
+diff -ru a/configure b/configure
+--- a/configure	2012-03-23 04:39:04.000000000 +0100
++++ b/configure	2017-12-04 10:41:36.581204544 +0100
+@@ -17,6 +17,9 @@
+ ## -------------------- ##
+ 
+ # Be more Bourne compatible
++mv config.guess config_old.guess
++mv config.sub config_old.sub
++automake --add-missing
+ DUALCASE=1; export DUALCASE # for MKS sh
+ if test -n "${ZSH_VERSION+set}" && (emulate sh) >/dev/null 2>&1; then :
+   emulate sh
